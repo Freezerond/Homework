@@ -13,6 +13,9 @@ if (a >= 0 and a <= 99):
         print(arraychik[a])
     if (a == 20):
         print(arraychik10[0])
-    if (a > 20):
+    if (a > 20 and a % 10 == 0):
+        mylist = [int(i) for i in str(a)]
+        print(arraychik10[mylist[0]-2])
+    if (a > 20 and not (a % 10 == 0)):
         mylist = [int(i) for i in str(a)]
         print(arraychik10[mylist[0]-2] + ' ' + arraychik[mylist[1]])
